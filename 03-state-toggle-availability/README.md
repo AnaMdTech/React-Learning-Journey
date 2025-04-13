@@ -1,12 +1,23 @@
-# React + Vite
+# 03-state-toggle-availability
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 **What You’ll Learn:**
+- How to use `useState` to manage dynamic UI
+- Handling button click events to update state
+- Passing state and handlers as props
 
-Currently, two official plugins are available:
+🧱 **Project Structure:**
+- `App`: Manages state
+- `ProfileCard`: Passes down props and shows button
+- `Avatar` & `UserInfo`: Display data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📸 **What It Does:**
+A profile card with a button to toggle whether the user is available or not. State updates are reflected in real-time in the UI.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 **Tech:**
+- React (Functional Components + Hooks)
+- JSX
+- CSS Styling
+
+📂 Folder Name: `03-state-toggle-availability`

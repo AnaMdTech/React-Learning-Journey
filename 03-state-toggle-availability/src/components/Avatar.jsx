@@ -1,15 +1,9 @@
-export default function Avatar({ src }) {
+export default function Avatar() {
   return (
     <img
-      src={src}
-      alt="Profile"
-      style={{
-        width: "100px",
-        height: "100px",
-        borderRadius: "50%",
-        objectFit: "cover",
-        marginBottom: "1rem",
-      }}
+      className="avatar"
+      src="https://avatars.githubusercontent.com/u/149268124?s=400&u=0b5abba4129432aad1ae8b94b25ebcc4a37d7469&v=4"
+      alt="Ana Mohammed"
     />
   );
 }

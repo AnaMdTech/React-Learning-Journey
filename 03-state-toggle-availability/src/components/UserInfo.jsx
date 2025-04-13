@@ -1,13 +1,11 @@
-export default function UserInfo({ name, role, skills }) {
+export default function UserInfo({ isAvailable }) {
   return (
-    <>
-      <h2>{name}</h2>
-      <p>{role}</p>
-      <ul>
-        {skills.map((skill) => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
-    </>
+    <div className="user-info">
+      <h2>Ana Mohammed</h2>
+      <p>Frontend Developer</p>
+      <p className={isAvailable ? "available" : "unavailable"}>
+        {isAvailable ? "✅ Available for work" : "❌ Currently unavailable"}
+      </p>
+    </div>
   );
 }
