@@ -1,12 +1,44 @@
-# React + Vite
+# 17 - useEffect with Dependency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini project demonstrates how to use the `useEffect` hook in React with a **dependency array**.
 
-Currently, two official plugins are available:
+## 🚀 What You'll Learn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- How to control when `useEffect` runs using dependency arrays
+- How to perform side effects like:
+  - Updating the document title
+  - Logging to the console
+- How to track changes to specific pieces of state
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Covered
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### `useEffect(() => {}, [])`
+
+- Runs **once** when the component is first mounted
+
+### `useEffect(() => {}, [count])`
+
+- Runs the effect **every time** the `count` state changes
+
+### `useEffect(() => {}, [name])`
+
+- Runs the effect **every time** the `name` state changes
+
+## 🧪 What the App Does
+
+- Displays a counter and a name input
+- Increments the count when a button is clicked
+- Updates the document title based on the current count
+- Logs to the console when `count` or `name` is updated
+
+## 📸 UI Features
+
+- A counter with an increment button
+- A name input field
+- Real-time feedback when the state changes
+
+## 💻 Tech Stack
+
+- React (Vite)
+- useState, useEffect hooks
+- Basic styling with CSS
