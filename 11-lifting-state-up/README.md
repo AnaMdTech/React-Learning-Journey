@@ -1,12 +1,10 @@
-# React + Vite
+# 11-lifting-state-up
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates **lifting state up** in React. State for both the selected step size and the counter is managed in the parent component (`App.jsx`) and passed down via props.
 
-Currently, two official plugins are available:
+### 👨‍🏫 What You'll Learn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Sharing state between components
+- `useState` in parent and passing values via props
+- Controlled `<select>` inputs
+- Handling events via props from child to parent
