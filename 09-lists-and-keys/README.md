@@ -1,12 +1,11 @@
-# React + Vite
+# 09 - Lists and Keys
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Project: Favorite Movies List
 
-Currently, two official plugins are available:
+### Description:
+In this project, you’ll learn how to work with lists in React. We’ll create a **Favorite Movies List** by displaying an array of movie objects. Each movie will be rendered dynamically using the `.map()` method.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### What You Will Learn:
+- How to use `.map()` to render a list of items in React
+- The importance of using `key` props for list items
+- How to break down a list into reusable components
