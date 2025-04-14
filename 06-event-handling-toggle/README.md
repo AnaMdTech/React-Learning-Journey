@@ -1,12 +1,23 @@
-# React + Vite
+# 06-event-handling-toggle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 **What You’ll Learn:**
+- How to handle events in React using `onClick`
+- How to manage visibility with `useState`
+- How to change UI based on state
 
-Currently, two official plugins are available:
+🧱 **Project Structure:**
+- `App`: Sends props to the profile
+- `ProfileCard`: Uses `useState` to show/hide the bio
+- `Avatar`: Displays user photo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📸 **What It Does:**
+- Toggles bio text when you click the "Show Bio" or "Hide Bio" button
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 **Tech:**
+- React `useState`
+- JSX conditional rendering
+- Event binding and dynamic text
+
+📂 Folder Name: `06-event-handling-toggle`
