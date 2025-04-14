@@ -1,3 +1,7 @@
-export default function StatusBadge({ text }) {
-  return <div className="status-badge">{text}</div>;
+export default function StatusBadge({ text, style }) {
+  return (
+    <div className="status-badge" style={style}>
+      {text}
+    </div>
+  );
 }

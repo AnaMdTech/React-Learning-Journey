@@ -8,7 +8,9 @@ export default function ProfileCard({ name, role, available, status }) {
       <h2>{name}</h2>
       <p>{role}</p>
       {available && <StatusBadge text={status} />}
-      {!available && <StatusBadge text={status} />}
+      {!available && (
+        <StatusBadge text={status} style={{ backgroundColor: "#c53222" }} />
+      )}
     </div>
   );
 }

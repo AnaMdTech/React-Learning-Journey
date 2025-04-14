@@ -2,7 +2,7 @@ import ProfileCard from "./components/ProfileCard";
 import "./index.css";
 
 export default function App() {
-  let available = false;
+  let available = true;
   let status_text = "";
   {available ? status_text = "🚀 Open to Collaborate" : status_text = "❌ Currently unavailable"}
   return (
