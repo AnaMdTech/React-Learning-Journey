@@ -1,12 +1,31 @@
-# React + Vite
+# 14-useEffect-basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 This project demonstrates how to use the `useEffect` hook to handle side effects like:
 
-Currently, two official plugins are available:
+- Listening to browser events (window resize, network status)
+- Cleaning up side effects when the component unmounts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 💡 Key Concepts
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `useEffect(() => {}, [])` runs only on mount
+- You can add **event listeners**, **fetch data**, or **sync external state**
+- Always clean up your side effects to avoid memory leaks
+
+---
+
+## 🚀 What You’ll Learn
+
+- React component lifecycle with `useEffect`
+- Using multiple `useEffect` hooks for different effects
+- Managing and cleaning up browser event listeners
+
+---
+
+## 🧪 Try It Yourself
+
+1. Resize your browser — the width updates!
+2. Turn off Wi-Fi or simulate offline mode — status updates instantly!
+
+---
