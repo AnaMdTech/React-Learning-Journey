@@ -1,12 +1,19 @@
-# React + Vite
+# 13-react-forms-validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 **What You'll Learn:**
 
-Currently, two official plugins are available:
+- How to control multiple form fields in React
+- How to validate input data with custom logic
+- How to show error messages in real-time
+- Prevent form submission unless inputs are valid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 **Built With:**
+- React `useState` for input control and errors
+- Basic email validation with regex
+- Minimal clean design with CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📚 **Concepts Practiced:**
+- Controlled components
+- Form submission handling
+- Dynamic validation & error display
+- Real-world UX-friendly forms
