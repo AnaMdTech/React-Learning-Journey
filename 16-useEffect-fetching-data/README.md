@@ -1,12 +1,26 @@
-# React + Vite
+# 16-useEffect-fetching-data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini project demonstrates how to use the `useEffect` hook to fetch data from an external API in React.
 
-Currently, two official plugins are available:
+## 🔍 What You Learn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Using `useEffect` to run code on mount
+- Fetching data from an API
+- Storing data in state using `useState`
+- Managing loading and error states
 
-## Expanding the ESLint configuration
+## 📡 API Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [JSONPlaceholder Users API](https://jsonplaceholder.typicode.com/users)
+
+## ✅ Features
+
+- Loads users when component mounts
+- Displays loading and error messages
+- Lists fetched users
+
+## 🧠 Key Takeaways
+
+- Always handle loading and error states when dealing with async logic
+- Return cleanup function if needed (not required in this example)
+- Keep your UI reactive based on state
