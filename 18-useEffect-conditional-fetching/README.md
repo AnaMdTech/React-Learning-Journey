@@ -1,12 +1,40 @@
-# React + Vite
+# 📁 18-useEffect-conditional-fetching
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini project demonstrates **conditional data fetching** in React using the `useEffect` hook. The goal is to fetch a **random user** from an API **only when a button is clicked**, not on every render.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Uses `useEffect` to trigger API call conditionally  
+- 🎲 Fetches random user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)  
+- 🔄 Handles loading state  
+- 🧑 Displays user name, email, and city  
+- 🧼 Clean separation of logic and side effects  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 What You’ll Learn
+
+- How to control when an API fetch should happen  
+- Best practices with `useEffect` and dependency arrays  
+- How to generate random content using a number  
+- Managing multiple pieces of state (`shouldFetch`, `data`, `loading`)  
+
+---
+
+## 🧱 Technologies
+
+- ⚛️ React  
+- 🧠 JavaScript (ES6+)  
+- 🌐 JSONPlaceholder API  
+
+---
+
+## 🧪 How It Works
+
+1. Clicking the button generates a random number between 1–10.
+2. That number is used as the user ID in the API URL.
+3. A `shouldFetch` flag is set to `true`.
+4. The `useEffect` hook triggers a fetch only when `shouldFetch` is `true`.
+5. Data is loaded, then shown with proper loading and error handling.
