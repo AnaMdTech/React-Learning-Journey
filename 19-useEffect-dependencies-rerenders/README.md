@@ -1,12 +1,23 @@
-# React + Vite
+# 19 - useEffect Dependencies & Re-Renders
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 What You'll Learn
 
-Currently, two official plugins are available:
+- How the `useEffect` dependency array works
+- What triggers a re-render in React
+- How to avoid unnecessary side effects
+- Best practices for managing state and effects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Key Concepts
 
-## Expanding the ESLint configuration
+- `useEffect(() => {}, [])` runs **once on mount**
+- `useEffect(() => {}, [dep])` runs when `dep` **changes**
+- No dependency array = runs on **every render**
+- Avoid putting **non-stable values** (e.g., objects, functions) in dependencies
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📝 Notes To Remember
+
+- **Re-renders happen when state/props change**
+- **Effects run after every render** unless you tell React when to run them
+- Infinite loops happen if you **update state inside an effect** that depends on that state
+- Use **console.log** inside your effect to trace execution
+- Use `useCallback` or `useMemo` if needed to stabilize dependencies
