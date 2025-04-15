@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useReducer } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const initialState = { count: 0, step: 1 };
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function reducer(state, action) {
+  switch (action.type) {
+    case "increment":
+      return { ...state, count: state.count + state.step };
+    case "decrement":
+      return { ...state, count: state.count - state.step };
+    case "reset":
+      return { ...state, count: 0 };
+    case "setStep":
+      return { ...state, step: Number(action.payload) };
+    default:
+      return state;
+  }
 }
 
-export default App
+function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { count, step } = state;
+
+  return (
+    <div className="container">
+      <h1>useReducer Counter</h1>
+      <p>
+        Current Count: <strong>{count}</strong>
+      </p>
+
+      <div className="controls">
+        <button onClick={() => dispatch({ type: "decrement" })}>−</button>
+        <button onClick={() => dispatch({ type: "increment" })}>+</button>
+        <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+      </div>
+
+      <div className="step-control">
+        <label>Step: </label>
+        <select
+          value={step}
+          onChange={(e) =>
+            dispatch({ type: "setStep", payload: e.target.value })
+          }
+        >
+          <option value={1}>+1</option>
+          <option value={2}>+2</option>
+          <option value={5}>+5</option>
+          <option value={10}>+10</option>
+        </select>
+      </div>
+    </div>
+  );
+}
+
+export default App;
