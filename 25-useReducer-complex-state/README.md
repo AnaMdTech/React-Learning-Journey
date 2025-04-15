@@ -1,12 +1,25 @@
-# React + Vite
+# 25 - useReducer for Complex State
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧠 Concept
 
-Currently, two official plugins are available:
+`useReducer` is a React Hook used to manage more complex state logic than `useState`. Instead of updating state directly, you dispatch actions to a reducer function that handles state transitions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### When to Use `useReducer`
+- State depends on previous values
+- Multiple related pieces of state
+- Easier to manage large form inputs, toggles, counters, etc.
 
-## Expanding the ESLint configuration
+## 🔧 What You'll Learn
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- How to define a reducer function
+- How to use `dispatch` to update state
+- Organizing actions and state transitions
+- Clean, scalable state management
+
+## 🧪 What You'll Build
+
+A counter app with:
+- Increment (+1)
+- Decrement (-1)
+- Reset
+- Dynamic step value (set via select)
