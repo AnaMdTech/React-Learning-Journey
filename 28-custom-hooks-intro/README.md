@@ -1,12 +1,20 @@
-# React + Vite
+# 28 - 🧠 Custom Hook: `useDocumentTitle`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini-project introduces a reusable custom React Hook called `useDocumentTitle`.
 
-Currently, two official plugins are available:
+## 📌 What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Updates the browser tab title based on a dynamic value (like a counter, page name, etc.).
 
-## Expanding the ESLint configuration
+## 🔧 How it works
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- You create a custom hook (`useDocumentTitle`) using `useEffect`.
+- This hook accepts a `title` string and updates the `document.title` accordingly.
+- You can reuse this hook in any component to keep your code clean and focused.
+
+## 📍 Key Takeaways
+
+- ✅ Custom hooks must start with `use`
+- ✅ They let you reuse stateful logic across components
+- ✅ Clean separation of logic and UI
+- ✅ Easy to test and reason about
