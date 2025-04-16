@@ -1,12 +1,33 @@
-# React + Vite
+# 27 - Global State with Context
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Overview
 
-Currently, two official plugins are available:
+This mini project demonstrates how to use **React Context API** to create and manage **global state** that can be shared between deeply nested components without prop drilling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Concepts Covered
 
-## Expanding the ESLint configuration
+- Creating Context with `createContext`
+- Using a Provider component to wrap children and provide shared state
+- Accessing and updating global state via `useContext`
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Use Case
+
+A shared **counter** that can be incremented from one component and viewed in another — all via **global context state**.
+
+## 🧩 Files & Structure
+
+- `CounterContext.jsx`: Creates and exports context & provider
+- `CounterControls.jsx`: Increments the counter
+- `CounterDisplay.jsx`: Displays the counter
+- `App.jsx`: Wraps components inside `CounterProvider`
+
+## 🧪 What You’ll Learn
+
+- How to define and export a global context
+- How to wrap your app with a Provider to share state
+- How to read/update global state with `useContext`
+
+## 🧠 Note
+
+This pattern is great for small to medium state sharing. For large-scale apps, consider advanced state libraries like Redux or Zustand.
+
