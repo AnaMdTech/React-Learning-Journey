@@ -1,12 +1,26 @@
-# React + Vite
+# 26 - React Context Basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+In this mini-project, we learned about **React Context** and how it helps manage global state in your application without the need to pass props through every component. We created a simple **UserContext** to manage user data and share it across multiple components.
 
-Currently, two official plugins are available:
+## Features
+- `UserContext`: Manages user data like name and email.
+- `Profile`: Displays the current user details.
+- `User`: Allows the user to update their name.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Key Concepts
+- **Context**: A way to share values across components without prop drilling.
+- **Provider**: Wraps components to supply context data.
+- **useContext**: Hook used to consume context data in components.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Next Steps
+- Experiment with more complex contexts like authentication or theme toggling.
+```
+
+---
+
+### ✅ **What You Have Learned**
+- How to use **React Context** to share state across multiple components.
+- How to create a **Context Provider** and use **`useContext`** to access data.
+- How to update shared state from different components.
