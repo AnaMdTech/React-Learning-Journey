@@ -1,12 +1,16 @@
-# React + Vite
+# 31-theme-context
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌗 Theme Toggle with React Context + localStorage
 
-Currently, two official plugins are available:
+### ✅ What You’ll Learn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- How to manage **global theme state** with React Context.
+- How to save theme preference in `localStorage`.
+- How to detect user’s **system dark/light mode** with `prefers-color-scheme`.
+- How to toggle themes in any component using a **custom `useTheme` hook**.
 
-## Expanding the ESLint configuration
+### 💡 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Theme persists across refresh.
+- Works with user’s system settings.
+- Custom hook for easy access.
