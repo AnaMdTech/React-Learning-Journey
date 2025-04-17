@@ -1,12 +1,17 @@
-# React + Vite
+# 29 - useLocalStorage Custom Hook 🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini project introduces a custom React Hook: `useLocalStorage`. It's a practical way to persist user input even after refreshing the browser.
 
-Currently, two official plugins are available:
+## 🔍 Concepts Covered
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Custom Hooks
+- `useState` with lazy initialization
+- `useEffect` to sync with `localStorage`
+- LocalStorage API
 
-## Expanding the ESLint configuration
+## 🧪 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- When the component loads, `useLocalStorage` checks if a value exists in localStorage.
+- If it does, it sets it as the default state.
+- If not, it uses the initial value you provide.
+- On every change, it updates localStorage with the new value.
