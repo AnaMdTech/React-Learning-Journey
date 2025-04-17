@@ -1,12 +1,16 @@
-# React + Vite
+# 30-theme-toggle-localstorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project that toggles between light and dark themes and saves the user preference using `localStorage`.
 
-Currently, two official plugins are available:
+## 💡 Key Concepts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `useState()` to manage current theme
+- `useEffect()` to sync theme changes with `localStorage` and apply it to the document body
+- `localStorage.getItem()` and `localStorage.setItem()` to persist theme
 
-## Expanding the ESLint configuration
+## 📦 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. On first render, the app checks if a theme is saved in localStorage.
+2. If found, it sets that theme as the default.
+3. When the user clicks the "Toggle Theme" button, the theme switches.
+4. The updated theme is saved to localStorage and applied to the document body.
