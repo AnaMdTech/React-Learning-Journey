@@ -1,12 +1,45 @@
-# React + Vite
+# 33-react-router-basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This mini-project introduces the **basics of React Router**, the standard library for routing in React. Routing allows us to build multi-page experiences without reloading the page, using URLs to render different components.
 
-Currently, two official plugins are available:
+## 🚀 What We Built
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A simple multi-page React app with three pages: `Home`, `About`, and `Contact`
+- Basic navigation using `<Link>` from `react-router-dom`
+- Route setup using `<BrowserRouter>`, `<Routes>`, and `<Route>`
 
-## Expanding the ESLint configuration
+## 📚 Concepts Covered
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ React Router Basics
+- `BrowserRouter` wraps your entire app and enables routing.
+- `Route` defines which component to show for which URL.
+- `Routes` groups all your routes.
+- `Link` allows navigation between pages without reloading.
+
+### ✅ Real-World Use
+React Router is used for apps that:
+- Have multiple views (e.g., dashboards, blogs, shops)
+- Need clean navigation and bookmarking (e.g., `/about`, `/products`)
+- Want SPA (Single Page App) behavior with multiple routes
+
+### ❌ Anti-Patterns to Avoid
+- Don't use `a href="#"` for navigation – it reloads the page.
+- Don't nest routers unnecessarily – stick to one top-level `BrowserRouter`.
+
+## 🎨 Styling with TailwindCSS
+
+We applied clean styling using Tailwind:
+- `text-2xl font-bold` for headings
+- `hover:text-blue-500` for interactive links
+- Layouts with utility classes like `p-4`, `text-center`, etc.
+
+## 💡 Best Practices
+- Always keep routes semantic (e.g., `/about`, not `/page1`)
+- Structure routes logically as your app grows
+- Use layout components to wrap routes for shared UI
+
+## ✅ What We Learned
+
+- How to create page-based navigation in React
+- Routing structure and good semantic URL usage
+- Tailwind styling best practices for basic layouts
