@@ -6,7 +6,7 @@ function UserProfile({ users }) {
   const currentUser = users.find((user) => user.id === Number(id));
 
   if (!currentUser) {
-    return <h2 className="text-red-500">User not found</h2>;
+    return <h2 className="text-red-500 text-center text-3xl">User not found</h2>;
   }
 
   return (
